@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			.mobile-only {
+				display: none;
+			}
+
+			@media (max-width: 767px) {
+				.mobile-only {
+					display: block;
+				}
+			}
+
+			.mobile-only li {
+				font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+					'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+				font-size: 25px;
+				font-weight: bold;
+				white-space: nowrap;
+			}
+
+			.flag-text {
+				display: inline-block;
+				background-clip: text;
+				-webkit-background-clip: text;
+				color: transparent;
+			}
+
+			.ind-flag {
+				background: url('https://en.wikipedia.org/wiki/Flag_of_India#/media/File:Flag_of_India.svg')
+					no-repeat;
+				background-size: cover;
+			}
+
+			.usa-flag {
+				background: url('https://en.wikipedia.org/wiki/Flag_of_the_United_States#/media/File:Flag_of_the_United_States_(DoS_ECA_Color_Standard).svg')
+					no-repeat;
+				background-size: cover;
+			}
+
+			.mobile-only li a {
+				text-decoration: none;
+				cursor: default;
+				font-size: 2.3rem;
+			}
+
+			@media (max-width: 375px) {
+				.mobile-only li {
+					font-size: 20px; /* Adjust font size for very small screens */
+				}
+
+				.mobile-only li a {
+					font-size: 2rem; /* Adjust font size for very small screens */
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mobile-only">
+			<li>
+				<a href="#">
+					<span class="flag-text ind-flag">IND</span> |
+					<span class="flag-text usa-flag">USA</span>
+				</a>
+			</li>
+		</div>
+	</body>
+</html>
