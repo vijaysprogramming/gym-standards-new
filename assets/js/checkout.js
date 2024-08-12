@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             checkoutItem.innerHTML = `
                 <img src="${product.image}" alt="${product.name}" class="cart-item-img">
                 ${product.name} - $${product.price.toFixed(2)}
-                <button class="btn btn-danger btn-sm float-right remove-from-cart-btn" data-id="${product.id}">Remove</button>
+                <button class="product-btn btn-danger w-100 btn-sm float-right remove-from-cart-btn" data-id="${product.id}">Remove</button>
             `;
             checkoutItems.appendChild(checkoutItem);
         });

@@ -8321,7 +8321,13 @@ del {
   margin-right: 10px;
 }
 
-
+.card-body .product-btn {
+  display: block;
+  margin: 0 auto; /* Center the button horizontally */
+}
+.card-body .btn-info {
+  margin-bottom: 10px; /* Space between buttons */
+}
 /* products css end*/
 
 

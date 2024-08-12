@@ -364,8 +364,8 @@ document.addEventListener('DOMContentLoaded', () => {
               <div class="card-body">
                   <h5 class="card-title">${product.name}</h5>
                   <p class="card-text">$${product.price.toFixed(2)}</p>
-                  <button class="btn btn-info details-btn">Details</button>
-                  <button class="btn btn-success add-to-cart-btn" data-id="${product.id}">Add to Cart</button>
+                  <button class="product-btn btn-info details-btn" style="width: 50%;">Details</button>
+                  <button class="product-btn btn-success add-to-cart-btn"  style="width: 50%;" data-id="${product.id}">Add to Cart</button>
               </div>
           </div>
       `;
