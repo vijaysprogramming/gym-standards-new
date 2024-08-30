@@ -113,7 +113,7 @@
 .boxed-btn:hover {
   background: #fff !important;
   color: #e41d2f;
-  border: 1px solid #e41d2f;
+  border: 3px solid #e41d2f;
 }
 
 /* line 72, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_variables.scss */
@@ -260,7 +260,8 @@
 /* home gym carousel start */
 /* carousel one start */
 #wrapper {
-  width: 100%;
+  
+  width: 90%;
   border: 2px solid #e2e2e2;
   border-color: #bbbbbb;
   border-radius: 4px;
@@ -326,7 +327,7 @@ button {
   border-color: #e41d2f;
   border-radius: 7px;
   height: 40px;
-  width: 60px;
+  width: auto;
   transition: 60ms ease-in-out;
 }
 
@@ -346,13 +347,8 @@ button:hover {
   margin-bottom: 1.5rem;
   background: white;
 }
-.carousel-wrapper {
-  width: 100%;
-  border: 2px solid black;
-  border-color: #bbbbbb;
-  border-radius: 4px;
-  background-color: white;
-}
+
+
 
 .carousel-content {
   position: relative;
@@ -768,34 +764,29 @@ hr {
 }
 /* line 244, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_common.scss */
 .btn {
-  background:  #fff;
+  background: #fff;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  /* was 27top-bottom 44 right-left */
-  padding: 20px 10px;
+  padding: 30px 10px;
   color: #ff1313;
   cursor: pointer;
   display: inline-block;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 0px;
-  line-height: 1;
-  border: 2px solid gray;
+  font-size: 10px;
+  font-weight: 500;
+  border-radius: 15px; 
+  border: 5px solid rgb(107, 106, 106);
   -moz-user-select: none;
   letter-spacing: 1px;
-  line-height: 0;
-  margin-bottom: 0;
-  margin: 10px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   cursor: pointer;
   transition: color 0.4s linear;
   position: relative;
   z-index: 1;
   overflow: hidden;
-  margin: 0;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  border-radius: 10%;
 }
+
+
 
 /* line 272, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_common.scss */
 /* .btn::before {
@@ -8365,3 +8356,30 @@ del {
 /* infinite scroll end  */
 
 
+/* remove btn start */
+.remove-btn {
+  width: auto;
+  background-color: #FF6B6B;
+  color: #FFFFFF;
+  border: 2px solid #E63946;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  margin-left: right;
+}
+
+.remove-btn i {
+  margin-right: 8px;
+}
+
+.remove-btn:hover {
+  background-color: #E63946;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* remove btn end */

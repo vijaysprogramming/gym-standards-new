@@ -347,9 +347,16 @@ document.querySelector('#right').addEventListener('click', handleClickGoAhead);
 document.addEventListener('DOMContentLoaded', () => {
   const products = [
       { id: 1, name: "Product 1", price: 10.00, image: "/nike.png" },
-      { id: 2, name: "Product 2", price: 20.00, image: "https://via.placeholder.com/150" },
-      { id: 3, name: "Product 3", price: 30.00, image: "https://via.placeholder.com/150" },
-  ];
+      { id: 2, name: "Product 2", price: 20.00, image: "assets/img/strength/weight-towers.png" },
+      { id: 3, name: "Product 3", price: 30.00, image: "assets/img/strength/robo-arm.png" },
+      { id: 4, name: "Product 4", price: 40.00, image: "assets/img/strength/stations-premium-multi-gym.png" },
+      { id: 5, name: "Product 5", price: 50.00, image: "assets/img/strength/functional-trainer-impact.png" },
+      { id: 6, name: "Product 6", price: 60.00, image: "assets/img/strength/cable-crossover-alpha.png" },
+      { id: 7, name: "Product 7", price: 70.00, image: "assets/img/strength/leg-extension.png" },
+      { id: 8, name: "Product 8", price: 80.00, image: "assets/img/strength/3-station-multi-gym-518bl.png" },
+      { id: 9, name: "Product 9", price: 90.00, image: "assets/img/strength/cable-crossover-fusion.png" },
+      { id: 10, name: "Product 11", price: 10.00, image: "assets/img/strength/star-series-adductor.png" },
+];
 
   const productList = document.getElementById('product-list');
   const cartItems = document.getElementById('cart-items');
@@ -409,7 +416,7 @@ document.addEventListener('DOMContentLoaded', () => {
           cartItem.innerHTML = `
               <img src="${product.image}" alt="${product.name}" class="cart-item-img">
               ${product.name} - $${product.price.toFixed(2)}
-              <button class="btn btn-danger btn-sm float-right remove-from-cart-btn" data-id="${product.id}">Remove</button>
+              <button class="remove-btn" data-id="${product.id}"><i class="fa fa-trash"></i> Remove</button>
           `;
           cartItems.appendChild(cartItem);
       });
