@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Product Catalog Test</title>
+		<link rel="manifest" href="site.webmanifest" />
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="./assets/img/favicon.ico"
+		/>
+
+		<!-- CSS here -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="css/owl.theme.default.min.css" />
+		<link rel="stylesheet" href="assets/css/slicknav.css" />
+		<link rel="stylesheet" href="assets/css/flaticon.css" />
+		<link rel="stylesheet" href="assets/css/gijgo.css" />
+		<link rel="stylesheet" href="assets/css/animate.min.css" />
+		<link rel="stylesheet" href="assets/css/animated-headline.css" />
+		<link rel="stylesheet" href="assets/css/magnific-popup.css" />
+		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+		<link rel="stylesheet" href="assets/css/themify-icons.css" />
+		<link rel="stylesheet" href="assets/css/slick.css" />
+		<link rel="stylesheet" href="assets/css/nice-select.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+		/>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+			}
+			.container {
+				display: flex;
+				justify-content: center;
+				gap: 20px;
+				padding: 20px;
+			}
+			.product-card {
+				border: 1px solid #ddd;
+				border-radius: 5px;
+				width: 200px;
+				text-align: center;
+				padding: 10px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			}
+			.product-card img {
+				width: 100%;
+				height: auto;
+				max-width: 150px;
+				margin: 0 auto;
+			}
+			.product-card h3 {
+				font-size: 18px;
+				margin: 10px 0;
+			}
+			.product-card p {
+				font-size: 16px;
+				color: #555;
+			}
+			.btn {
+				display: block;
+				width: 100%;
+				padding: 10px;
+				margin: 5px 0;
+				border: none;
+				border-radius: 5px;
+				color: white;
+				cursor: pointer;
+				text-align: center;
+			}
+			.btn-details {
+				background-color: #17a2b8;
+			}
+			.btn-add-to-cart {
+				background-color: #28a745;
+			}
+			.shopping-cart {
+				text-align: center;
+				margin-top: 20px;
+			}
+			.shopping-cart button {
+				padding: 10px 20px;
+				border: none;
+				border-radius: 5px;
+				background-color: #007bff;
+				color: white;
+				cursor: pointer;
+			}
+			.cart-summary {
+				margin-top: 20px;
+				text-align: center;
+			}
+			.cart-summary ul {
+				list-style: none;
+				padding: 0;
+			}
+			.cart-summary li {
+				margin-bottom: 10px;
+			}
+			.btn-remove {
+				background-color: #dc3545;
+				padding: 5px 10px;
+				margin-left: 10px;
+				border-radius: 5px;
+				border: none;
+				color: white;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 style="text-align: center">Product Catalog Test</h1>
+
+		<div class="container">
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/d2.5kg.jpg" alt="Product 1" />
+				<h3>Product 1</h3>
+				<p>$10.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(1, 'Product 1', 10.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/d7.5.jpg" alt="Product 2" />
+				<h3>Product 2</h3>
+				<p>$20.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(2, 'Product 2', 20.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/d10kg.jpg" alt="Product 3" />
+				<h3>Product 3</h3>
+				<p>$30.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(3, 'Product 3', 30.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/d12.5kg.jpg" alt="Product 1" />
+				<h3>Product 4</h3>
+				<p>$10.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(1, 'Product 1', 10.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/d15kg.jpg" alt="Product 1" />
+				<h3>Product 5</h3>
+				<p>$10.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(1, 'Product 1', 10.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/d17.5kg.jpg" alt="Product 2" />
+				<h3>Product 6</h3>
+				<p>$20.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(2, 'Product 2', 20.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/d20kg.jpg" alt="Product 3" />
+				<h3>Product 7</h3>
+				<p>$30.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(3, 'Product 3', 30.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/22.5kg.jpg" alt="Product 1" />
+				<h3>Product 8</h3>
+				<p>$10.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(1, 'Product 1', 10.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/d25kg..jpg" alt="Product 1" />
+				<h3>Product 9</h3>
+				<p>$10.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(1, 'Product 1', 10.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/27.5kg.jpg" alt="Product 2" />
+				<h3>Product 10</h3>
+				<p>$20.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(2, 'Product 2', 20.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/d30kg.jpg" alt="Product 3" />
+				<h3>Product 11</h3>
+				<p>$30.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(3, 'Product 3', 30.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/32.5kg.jpg" alt="Product 1" />
+				<h3>Product 12</h3>
+				<p>$10.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(1, 'Product 1', 10.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/d35kg.jpg" alt="Product 1" />
+				<h3>Product 1</h3>
+				<p>$10.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(1, 'Product 1', 10.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/37.5kg.jpg" alt="Product 2" />
+				<h3>Product 2</h3>
+				<p>$20.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(2, 'Product 2', 20.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/d40kg.jpg" alt="Product 3" />
+				<h3>Product 3</h3>
+				<p>$30.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(3, 'Product 3', 30.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/d42.5kg.jpg" alt="Product 1" />
+				<h3>Product 4</h3>
+				<p>$10.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(1, 'Product 1', 10.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/d42.5kg.jpg" alt="Product 1" />
+				<h3>Product 5</h3>
+				<p>$10.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(1, 'Product 1', 10.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/d45kg.jpg" alt="Product 2" />
+				<h3>Product 6</h3>
+				<p>$20.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(2, 'Product 2', 20.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/d47.5.jpg" alt="Product 3" />
+				<h3>Product 7</h3>
+				<p>$30.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(3, 'Product 3', 30.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/d50kg.jpg" alt="Product 1" />
+				<h3>Product 8</h3>
+				<p>$10.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(1, 'Product 1', 10.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/s2.5kg.jpg" alt="Product 1" />
+				<h3>Product 1</h3>
+				<p>$10.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(1, 'Product 1', 10.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/S5KG.jpg" alt="Product 2" />
+				<h3>Product 2</h3>
+				<p>$20.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(2, 'Product 2', 20.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/s7.5kg.jpg" alt="Product 3" />
+				<h3>Product 3</h3>
+				<p>$30.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(3, 'Product 3', 30.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/s10kg.jpg" alt="Product 1" />
+				<h3>Product 4</h3>
+				<p>$10.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(1, 'Product 1', 10.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/s12.5kg.jpg" alt="Product 1" />
+				<h3>Product 5</h3>
+				<p>$10.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(1, 'Product 1', 10.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/s15kg.jpg" alt="Product 2" />
+				<h3>Product 6</h3>
+				<p>$20.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(2, 'Product 2', 20.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/s17.5kg.jpg" alt="Product 3" />
+				<h3>Product 7</h3>
+				<p>$30.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(3, 'Product 3', 30.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/s20kg..jpg" alt="Product 1" />
+				<h3>Product 8</h3>
+				<p>$10.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(1, 'Product 1', 10.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/s22.5.jpg" alt="Product 1" />
+				<h3>Product 9</h3>
+				<p>$10.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(1, 'Product 1', 10.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/s25kg.jpg" alt="Product 2" />
+				<h3>Product 10</h3>
+				<p>$20.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(2, 'Product 2', 20.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/s27.5.jpg" alt="Product 3" />
+				<h3>Product 11</h3>
+				<p>$30.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(3, 'Product 3', 30.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/t2kg.jpg" alt="Product 1" />
+				<h3>Product 1</h3>
+				<p>$10.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(1, 'Product 1', 10.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/t4kg.jpg" alt="Product 2" />
+				<h3>Product 2</h3>
+				<p>$20.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(2, 'Product 2', 20.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/t6kg.jpg" alt="Product 3" />
+				<h3>Product 3</h3>
+				<p>$30.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(3, 'Product 3', 30.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/t8kg.jpg" alt="Product 1" />
+				<h3>Product 4</h3>
+				<p>$10.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(1, 'Product 1', 10.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/t10kg.jpg" alt="Product 1" />
+				<h3>Product 5</h3>
+				<p>$10.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(1, 'Product 1', 10.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/t12kg.jpg" alt="Product 2" />
+				<h3>Product 6</h3>
+				<p>$20.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(2, 'Product 2', 20.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/t14kg.jpg" alt="Product 3" />
+				<h3>Product 7</h3>
+				<p>$30.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(3, 'Product 3', 30.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/t16kg.jpg" alt="Product 1" />
+				<h3>Product 8</h3>
+				<p>$10.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(1, 'Product 1', 10.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/t18kg.jpg" alt="Product 1" />
+				<h3>Product 9</h3>
+				<p>$10.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(1, 'Product 1', 10.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+			<div class="product-card">
+				<img src="./assets/img/dumbbells/t20kg.jpg" alt="Product 2" />
+				<h3>Product 10</h3>
+				<p>$20.00</p>
+				<button class="btn btn-details">Details</button>
+				<button
+					class="btn btn-add-to-cart"
+					onclick="addToCart(2, 'Product 2', 20.00)"
+				>
+					Add to Cart
+				</button>
+			</div>
+		</div>
+
+		<div class="container mt-5">
+			<h1 class="text-center">Checkout</h1>
+			<ul id="checkout-items" class="list-group">
+				<!-- Checkout items will be dynamically added here -->
+			</ul>
+			<h3 class="mt-3">Total Amount: $<span id="total-amount">0.00</span></h3>
+			<h3 class="mt-3">Select Payment Method</h3>
+			<div class="form-check">
+				<input
+					class="form-check-input"
+					type="radio"
+					name="paymentMethod"
+					id="creditCard"
+					value="creditCard"
+					checked
+				/>
+				<label class="form-check-label" for="creditCard">Credit Card</label>
+			</div>
+			<div class="form-check">
+				<input
+					class="form-check-input"
+					type="radio"
+					name="paymentMethod"
+					id="paypal"
+					value="paypal"
+				/>
+				<label class="form-check-label" for="paypal">PayPal</label>
+			</div>
+			<div class="form-check">
+				<input
+					class="form-check-input"
+					type="radio"
+					name="paymentMethod"
+					id="bankTransfer"
+					value="bankTransfer"
+				/>
+				<label class="form-check-label" for="bankTransfer">Bank Transfer</label>
+			</div>
+			<button class="btn btn-success mt-3" id="complete-order-btn">
+				Proceed to Pay $<span id="total-amount-button">0.00</span>
+			</button>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="./assets/js/checkout.js"></script>
+	</body>
+</html>
