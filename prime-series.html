@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Product Catalog Test</title>
+		<title>Prime Series Catalog Test</title>
 		<style>
 			body {
 				font-family: Arial, sans-serif;
@@ -85,56 +85,87 @@
 				color: white;
 				cursor: pointer;
 			}
+			.product-image {
+				max-width: 150px;
+				display: -moz-popup;
+				margin-top: 10px;
+			}
+
+			.cart-info {
+				margin-top: 20px;
+			}
 		</style>
 	</head>
 	<body>
-		<h1 style="text-align: center">Product Catalog Test</h1>
+		<h1 style="text-align: center">Prime Series Catalog Test</h1>
 
 		<div class="container">
 			<div class="product-card">
 				<img src="./assets/img/prime-series/prime1.png" alt="Product 1" />
-				<h3>Product 1</h3>
-				<p>$10.00</p>
+				<h3>Prime Series Lat Pulldown + Low Row</h3>
+				<p>$4,189</p>
+				<a
+					href="./prime-series-equipments/Prime Series Lat Pulldown + Low Row.html"
+					style="text-decoration: none"
+					target="_blank"
+				>
 				<button class="btn btn-details">Details</button>
 				<button
 					class="btn btn-add-to-cart"
-					onclick="addToCart(1, 'Product 1', 10.00)"
+					onclick="addToCart(1, 'Prime Series High Pulley', 4,189)"
 				>
 					Add to Cart
 				</button>
 			</div>
 			<div class="product-card">
 				<img src="./assets/img/prime-series/ps2.png.jpg" alt="Product 2" />
-				<h3>Product 2</h3>
-				<p>$20.00</p>
+				<h3>Prime Series Chest Press</h3>
+				<p>$3,830</p>
+				<a
+					href="./prime-series-equipments/Chest Press.html"
+					style="text-decoration: none"
+					target="_blank"
+				>
 				<button class="btn btn-details">Details</button>
 				<button
 					class="btn btn-add-to-cart"
-					onclick="addToCart(2, 'Product 2', 20.00)"
+					onclick="addToCart(2, 'Prime Series Chest Press', 3,830)"
 				>
 					Add to Cart
 				</button>
 			</div>
 			<div class="product-card">
 				<img src="./assets/img/prime-series/ps3.png.jpg" alt="Product 3" />
-				<h3>Product 3</h3>
-				<p>$30.00</p>
-				<button class="btn btn-details">Details</button>
+				<h3>Prime Series Pearl Delt / Pec Fly</h3>
+				<p>$4,100</p>
+				<a
+					href="./prime-series-equipments/Pearl Delt.html"
+					style="text-decoration: none"
+					target="_blank"
+				>
+					<button class="btn btn-details">Details</button>
+				</a>
+
 				<button
 					class="btn btn-add-to-cart"
-					onclick="addToCart(3, 'Product 3', 30.00)"
+					onclick="addToCart(3, 'Prime Series Pearl Delt / Pec Fly', 4,100)"
 				>
 					Add to Cart
 				</button>
 			</div>
 			<div class="product-card">
-				<img src="./assets/img/prime-series/ps4.png.jpg" alt="Product 1" />
-				<h3>Product 4</h3>
-				<p>$10.00</p>
+				<img src="./assets/img/prime-series/ps4.png.jpg" alt="Product 4" />
+				<h3>Prime Series Multi Press</h3>
+				<p>$4,189</p>
+				<a
+					href="./prime-series-equipments/Multi Press.html"
+					style="text-decoration: none"
+					target="_blank"
+				>
 				<button class="btn btn-details">Details</button>
 				<button
 					class="btn btn-add-to-cart"
-					onclick="addToCart(1, 'Product 1', 10.00)"
+					onclick="addToCart(4, 'Product 4', 4,189)"
 				>
 					Add to Cart
 				</button>
@@ -143,49 +174,69 @@
 
 		<div class="container">
 			<div class="product-card">
-				<img src="./assets/img/prime-series/ps5.jpg" alt="Product 1" />
-				<h3>Product 5</h3>
-				<p>$10.00</p>
+				<img src="./assets/img/prime-series/ps5.jpg" alt="Product 5" />
+				<h3>Prime Series Abductor + Adductor</h3>
+				<p>$4,100</p>
+				<a
+					href="./prime-series-equipments/Abductor + Adductor.html"
+					style="text-decoration: none"
+					target="_blank"
+				>
 				<button class="btn btn-details">Details</button>
 				<button
 					class="btn btn-add-to-cart"
-					onclick="addToCart(1, 'Product 1', 10.00)"
+					onclick="addToCart(5, 'Product 5', 4,100)"
 				>
 					Add to Cart
 				</button>
 			</div>
 			<div class="product-card">
-				<img src="./assets/img/prime-series/ps6.png.jpg" alt="Product 2" />
-				<h3>Product 6</h3>
-				<p>$20.00</p>
+				<img src="./assets/img/prime-series/ps6.png.jpg" alt="Product 6" />
+				<h3>Prime Series High Pulley</h3>
+				<p>$4,189</p>
+				<a
+					href="./prime-series-equipments/High Pulley.html"
+					style="text-decoration: none"
+					target="_blank"
+				>
 				<button class="btn btn-details">Details</button>
 				<button
 					class="btn btn-add-to-cart"
-					onclick="addToCart(2, 'Product 2', 20.00)"
+					onclick="addToCart(6, 'Product 6', 4,189)"
 				>
 					Add to Cart
 				</button>
 			</div>
 			<div class="product-card">
-				<img src="./assets/img/prime-series/ps7.png.jpg" alt="Product 3" />
-				<h3>Product 7</h3>
-				<p>$30.00</p>
+				<img src="./assets/img/prime-series/ps7.png.jpg" alt="Product 7" />
+				<h3>Prime Series Biceps Curl</h3>
+				<p>$4,189</p>
+				<a
+					href="./prime-series-equipments/Series Biceps Curl.html"
+					style="text-decoration: none"
+					target="_blank"
+				>
 				<button class="btn btn-details">Details</button>
 				<button
 					class="btn btn-add-to-cart"
-					onclick="addToCart(3, 'Product 3', 30.00)"
+					onclick="addToCart(7, 'Prime Series Biceps Curl 7', 4,189)"
 				>
 					Add to Cart
 				</button>
 			</div>
 			<div class="product-card">
-				<img src="./assets/img/prime-series/ps.8.png.jpg" alt="Product 1" />
-				<h3>Product 8</h3>
-				<p>$10.00</p>
+				<img src="./assets/img/prime-series/ps.8.png.jpg" alt="Product 8" />
+				<h3>Prime Series Shoulder Press</h3>
+				<p>$4,069</p>
+				<a
+					href="./prime-series-equipments/Shoulder Press.html"
+					style="text-decoration: none"
+					target="_blank"
+				>
 				<button class="btn btn-details">Details</button>
 				<button
 					class="btn btn-add-to-cart"
-					onclick="addToCart(1, 'Product 1', 10.00)"
+					onclick="addToCart(8, 'Prime Series Shoulder Press 8', 4,069)"
 				>
 					Add to Cart
 				</button>
@@ -194,49 +245,69 @@
 
 		<div class="container">
 			<div class="product-card">
-				<img src="./assets/img/prime-series/ps9.png.jpg" alt="Product 1" />
-				<h3>Product 9</h3>
-				<p>$10.00</p>
+				<img src="./assets/img/prime-series/ps9.png.jpg" alt="Product 9" />
+				<h3>Prime Series Prone Leg Curl</h3>
+				<p>$4,189</p>
+				<a
+					href="./prime-series-equipments/Prone Leg Curl.html"
+					style="text-decoration: none"
+					target="_blank"
+				>
 				<button class="btn btn-details">Details</button>
 				<button
 					class="btn btn-add-to-cart"
-					onclick="addToCart(1, 'Product 1', 10.00)"
+					onclick="addToCart(9, 'Prime Series Prone Leg Curl 9' , 4,189)"
 				>
 					Add to Cart
 				</button>
 			</div>
 			<div class="product-card">
-				<img src="./assets/img/prime-series/ps10.png.jpg" alt="Product 2" />
-				<h3>Product 10</h3>
-				<p>$20.00</p>
+				<img src="./assets/img/prime-series/ps10.png.jpg" alt="Product 10" />
+				<h3>Prime Series Leg Curl Leg Extension</h3>
+				<p>$4,308</p>
+				<a
+					href="./prime-series-equipments/Leg Curl Leg Extension.html"
+					style="text-decoration: none"
+					target="_blank"
+				>
 				<button class="btn btn-details">Details</button>
 				<button
 					class="btn btn-add-to-cart"
-					onclick="addToCart(2, 'Product 2', 20.00)"
+					onclick="addToCart(10, 'Prime Series Leg Curl Leg Extension 10', 4,308)"
 				>
 					Add to Cart
 				</button>
 			</div>
 			<div class="product-card">
-				<img src="./assets/img/prime-series/ps11.png.jpg" alt="Product 3" />
-				<h3>Product 11</h3>
-				<p>$30.00</p>
+				<img src="./assets/img/prime-series/ps11.png.jpg" alt="Product 11" />
+				<h3>Prime Series Seated Row</h3>
+				<p>$4,428</p>
+				<a
+					href="./prime-series-equipments/Seated Row.html"
+					style="text-decoration: none"
+					target="_blank"
+				>
 				<button class="btn btn-details">Details</button>
 				<button
 					class="btn btn-add-to-cart"
-					onclick="addToCart(3, 'Product 3', 30.00)"
+					onclick="addToCart(11, 'Prime Series Seated Row 11', 4,428)"
 				>
 					Add to Cart
 				</button>
 			</div>
 			<div class="product-card">
-				<img src="./assets/img/prime-series/ps12.png.jpg" alt="Product 1" />
-				<h3>Product 12</h3>
-				<p>$10.00</p>
+				<img src="./assets/img/prime-series/ps12.png.jpg" alt="Product 12" />
+				<h3>Prime Series Leg Extension</h3>
+				<p>$3,590</p>
+				<a
+					href="./prime-series-equipments/Leg Extension.html"
+					style="text-decoration: none"
+					target="_blank"
+				>
 				<button class="btn btn-details">Details</button>
 				<button
 					class="btn btn-add-to-cart"
-					onclick="addToCart(1, 'Product 1', 10.00)"
+					onclick="addToCart(12, 'Prime Series Leg Extension', 3,590)"
 				>
 					Add to Cart
 				</button>

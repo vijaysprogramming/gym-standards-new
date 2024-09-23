@@ -1,0 +1,101 @@
+/* Container for the overall layout */
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the image section */
+.product-image {
+    max-width: 500px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Styling for the product details section */
+.product-details {
+    flex-grow: 1;
+    padding-left: 40px;
+}
+
+.product-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-description {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Button style */
+.request-quote-button {
+    display: inline-block;
+    background-color: #8BC34A;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.request-quote-button:hover {
+    background-color: #7CB342;
+}
+
+/* Additional styling for the specs list */
+.product-specs {
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.product-specs li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+/*-responsive-*/
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+
+ 
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+ 
+}
