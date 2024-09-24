@@ -21,7 +21,8 @@ function addToCart(productId, productName, productPrice, productImage) {
     updateCartUI();
 }
 
-function updateCartUI() {
+function updateCartUI() 
+{
     const cartItemsElement = document.getElementById('cart-items');
     const cartTotalElement = document.getElementById('cart-total');
 
@@ -32,7 +33,7 @@ function updateCartUI() {
     cart.forEach((item, index) => {
         const tr = document.createElement('tr');
 
-        // Item image
+       
         const imgTd = document.createElement('td');
         const img = document.createElement('img');
         img.src = item.image;
@@ -40,23 +41,23 @@ function updateCartUI() {
         img.style.width = '50px'; // Set the width of the image to display it in small size
         imgTd.appendChild(img);
 
-        // Item name
+       
         const nameTd = document.createElement('td');
         nameTd.textContent = item.name;
 
-        // Quantity
+       
         const quantityTd = document.createElement('td');
         quantityTd.textContent = item.quantity;
 
-        // Price per item
+       
         const priceTd = document.createElement('td');
         priceTd.textContent = `$${item.price.toFixed(2)}`;
 
-        // Total price for the item
+        
         const totalTd = document.createElement('td');
         totalTd.textContent = `$${(item.price * item.quantity).toFixed(2)}`;
 
-        // Remove button
+       
         const actionTd = document.createElement('td');
         const removeButton = document.createElement('button');
         removeButton.textContent = 'Remove';
@@ -88,7 +89,7 @@ function removeFromCart(index) {
     updateCartUI();
 }
 
-// Initialize floating cart button and scroll functionality
+
 window.onload = function () {
     initFloatingCartButton();
 

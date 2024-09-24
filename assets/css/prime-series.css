@@ -140,7 +140,7 @@
     }
 
     .shopping-cart button {
-        width: 100%;
+        width: auto;
     }
 }
 
@@ -201,7 +201,7 @@ h2 {
 
 #cart-total {
     font-size: 18px;
-    text-align: right;
+    text-align: left;
     font-weight: bold;
 }
 
@@ -219,3 +219,120 @@ h2 {
 }
     
     
+
+
+/* General styles for the cart summary */
+.cart-summary {
+    max-width: 100%; /* Ensure it takes full width */
+    margin: 0 auto; /* Center the cart summary */
+    padding: 20px; /* Add padding */
+    font-family: Arial, sans-serif; /* Use a clean font */
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+}
+
+/* Styles for the cart table */
+#cart-table {
+    width: 100%; /* Make the table responsive */
+    border-collapse: collapse; /* Collapse borders */
+    margin-bottom: 20px; /* Space below the table */
+}
+
+/* Table header and cell styles */
+#cart-table th, #cart-table td {
+    border: 1px solid #ccc; /* Light grey borders */
+    padding: 10px; /* Space inside cells */
+    text-align: center; /* Center text */
+}
+
+/* Header background color */
+#cart-table th {
+    background-color: #f4f4f4; /* Light background for headers */
+}
+
+/* Image styles within the cart */
+#cart-items img {
+    max-width: 50px; /* Control the image size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Button styles for the remove button */
+.btn-remove {
+    background-color: #FF5733; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Button hover effect */
+.btn-remove:hover {
+    background-color: #e74c3c; /* Darker shade on hover */
+}
+
+/* Cart total display styles */
+#cart-total {
+    font-size: 18px; /* Larger font for total */
+    font-weight: bold; /* Bold text for emphasis */
+    margin-top: 20px; /* Space above the total */
+}
+
+/* Floating cart button styles */
+#floating-cart-button {
+    position: fixed; /* Fix the button to the screen */
+    bottom: 80px; /* Space from the bottom */
+    right: 10px; /* Space from the right */
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #FF5733; /* Background color */
+    color: #fff; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: none; /* Hidden by default */
+}
+
+/* Floating cart button hover effect */
+#floating-cart-button:hover {
+    background-color: #e74c3c; /* Darker shade on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #cart-table th, #cart-table td {
+        font-size: 14px; /* Slightly smaller font on smaller screens */
+        padding: 8px; /* Reduce padding */
+    }
+
+    /* Stack items vertically on smaller screens */
+    #cart-table {
+        display: block;
+        overflow-x: auto; /* Allow scrolling */
+    }
+}
+
+/* Styles for very small screens */
+@media (max-width: 480px) {
+    #cart-table th {
+        display: none; /* Ensure table headers are completely hidden */
+    }
+
+    #cart-table td {
+        display: block; /* Stack cells vertically */
+        width: 100%; /* Full width */
+        box-sizing: border-box; /* Include padding in width */
+    }
+
+    #cart-table tr {
+        display: block; /* Stack rows vertically */
+        margin-bottom: 10px; /* Space between rows */
+    }
+
+    #cart-items img {
+        max-width: 40px; /* Smaller image size on very small screens */
+    }
+
+    /* Additional adjustments for clarity */
+    #cart-items {
+        display: block; /* Ensure cart items display properly */
+    }
+}
