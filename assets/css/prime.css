@@ -1,4 +1,4 @@
-/* Container for the overall layout */
+/* 
 .product-container {
     display: flex;
     justify-content: space-between;
@@ -9,7 +9,6 @@
     font-family: Arial, sans-serif;
 }
 
-/* Styling for the image section */
 .product-image {
     max-width: 500px;
     border: 1px solid #ccc;
@@ -21,7 +20,7 @@
     height: auto;
 }
 
-/* Styling for the product details section */
+
 .product-details {
     flex-grow: 1;
     padding-left: 40px;
@@ -38,7 +37,7 @@
     margin-top: 20px;
 }
 
-/* Button style */
+
 .request-quote-button {
     display: inline-block;
     background-color: #8BC34A;
@@ -56,7 +55,7 @@
     background-color: #7CB342;
 }
 
-/* Additional styling for the specs list */
+
 .product-specs {
     font-size: 14px;
     margin-top: 30px;
@@ -66,36 +65,176 @@
     list-style-type: none;
     margin-bottom: 5px;
 }
-/*-responsive-*/
-/* Normal desktop :1200px. */
+
 @media (min-width: 1200px) and (max-width: 1500px) {
 
 
 }
 
 
-/* Normal desktop :992px. */
+
 @media (min-width: 992px) and (max-width: 1200px) {
 
 
 }
 
  
-/* Tablet desktop :768px. */
+
 @media (min-width: 768px) and (max-width: 991px) {
 
 
 }
 
  
-/* small mobile :320px. */
+
 @media (max-width: 767px) {
 
  
 }
  
-/* Large Mobile :480px. */
+
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 .container {width:450px}
  
+} */
+
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.product-image {
+    max-width: 500px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.product-details {
+    flex-grow: 1;
+    padding-left: 40px;
+}
+
+.product-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-description {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.request-quote-button {
+    display: inline-block;
+    background-color: #8BC34A;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.request-quote-button:hover {
+    background-color: #7CB342;
+}
+
+.product-specs {
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.product-specs li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+/* Large devices (desktops) */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .product-container {
+        padding: 20px;
+        max-width: 1100px;
+    }
+}
+
+/* Medium devices (large tablets and small desktops) */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .product-container {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-details {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+/* Small devices (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .product-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .product-details {
+        padding-left: 0;
+        text-align: center;
+    }
+    .product-title {
+        font-size: 24px;
+    }
+    .request-quote-button {
+        padding: 10px 20px;
+    }
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 767px) {
+    .product-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .product-image {
+        max-width: 100%;
+    }
+    .product-details {
+        padding-left: 0;
+        text-align: center;
+    }
+    .product-title {
+        font-size: 22px;
+    }
+    .request-quote-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Extra small devices (phones) for iPhones and Samsung models */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+    .product-image {
+        max-width: 90%;
+    }
+    .request-quote-button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
 }

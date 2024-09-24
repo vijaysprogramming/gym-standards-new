@@ -3,8 +3,28 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Prime Series Catalog Test</title>
+		<title>Prime Series Catalogue</title>
 		<link rel="stylesheet" href="./assets/css/prime-series.css" />
+		<style>
+			/* Floating button styles */
+			.floating-btn {
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				background-color: #ff5722;
+				color: white;
+				border: none;
+				padding: 15px;
+				border-radius: 50%;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+				cursor: pointer;
+				font-size: 18px;
+			}
+
+			.floating-btn:hover {
+				background-color: #e64a19;
+			}
+		</style>
 	</head>
 	<body>
 		<h1 style="text-align: center">Prime Series Catalog Test</h1>
@@ -28,6 +48,7 @@
 					Add to Cart
 				</button>
 			</div>
+
 			<div class="product-card">
 				<img src="./assets/img/prime-series/ps2.png.jpg" alt="Product 2" />
 				<h3>Prime Series Chest Press</h3>
@@ -153,7 +174,7 @@
 				</a>
 				<button
 					class="btn btn-add-to-cart"
-					onclick="addToCart(8, 'Prime Series Shoulder Press 8', 4,069)"
+					onclick="addToCart(8, 'Prime Series Shoulder Press 8', 4.069)"
 				>
 					Add to Cart
 				</button>
@@ -235,16 +256,43 @@
 			</div>
 		</div>
 
+		<!-- <div class="cart-summary" id="cart-summary">
+			<h2>Shopping Cart</h2>
+			<ul id="cart-items"></ul>
+			<p id="cart-total"></p>
+		</div> -->
+
+		<div class="cart-summary" id="cart-summary">
+			<h2>Your Cart</h2>
+			<table id="cart-table">
+				<thead>
+					<tr>
+						<th>Item Image</th>
+						<th>Item Name</th>
+						<th>Quantity</th>
+						<th>Price</th>
+						<th>Total</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody id="cart-items"></tbody>
+			</table>
+			<p id="cart-total"></p>
+		</div>
 		<div class="shopping-cart">
 			<button onclick="checkout()">Checkout</button>
 		</div>
 
-		<div class="cart-summary" id="cart-summary">
-			<h2>Shopping Cart</h2>
-			<ul id="cart-items"></ul>
-			<p id="cart-total"></p>
-		</div>
+		<button class="floating-btn" onclick="openCart()">🛒</button>
 
 		<script src="./assets/js/prime-series.js"></script>
+
+		<script>
+			function openCart() {
+				document
+					.getElementById('cart-summary')
+					.scrollIntoView({ behavior: 'smooth' });
+			}
+		</script>
 	</body>
 </html>
