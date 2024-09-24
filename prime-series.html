@@ -4,97 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Prime Series Catalog Test</title>
-		<style>
-			body {
-				font-family: Arial, sans-serif;
-			}
-			.container {
-				display: flex;
-				justify-content: center;
-				gap: 20px;
-				padding: 20px;
-			}
-			.product-card {
-				border: 1px solid #ddd;
-				border-radius: 5px;
-				width: 200px;
-				text-align: center;
-				padding: 10px;
-				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-			}
-			.product-card img {
-				width: 100%;
-				height: auto;
-				max-width: 150px;
-				margin: 0 auto;
-			}
-			.product-card h3 {
-				font-size: 18px;
-				margin: 10px 0;
-			}
-			.product-card p {
-				font-size: 16px;
-				color: #555;
-			}
-			.btn {
-				display: block;
-				width: 100%;
-				padding: 10px;
-				margin: 5px 0;
-				border: none;
-				border-radius: 5px;
-				color: white;
-				cursor: pointer;
-				text-align: center;
-			}
-			.btn-details {
-				background-color: #17a2b8;
-			}
-			.btn-add-to-cart {
-				background-color: #28a745;
-			}
-			.shopping-cart {
-				text-align: center;
-				margin-top: 20px;
-			}
-			.shopping-cart button {
-				padding: 10px 20px;
-				border: none;
-				border-radius: 5px;
-				background-color: #007bff;
-				color: white;
-				cursor: pointer;
-			}
-			.cart-summary {
-				margin-top: 20px;
-				text-align: center;
-			}
-			.cart-summary ul {
-				list-style: none;
-				padding: 0;
-			}
-			.cart-summary li {
-				margin-bottom: 10px;
-			}
-			.btn-remove {
-				background-color: #dc3545;
-				padding: 5px 10px;
-				margin-left: 10px;
-				border-radius: 5px;
-				border: none;
-				color: white;
-				cursor: pointer;
-			}
-			.product-image {
-				max-width: 150px;
-				display: -moz-popup;
-				margin-top: 10px;
-			}
-
-			.cart-info {
-				margin-top: 20px;
-			}
-		</style>
+		<link rel="stylesheet" href="./assets/css/prime-series.css" />
 	</head>
 	<body>
 		<h1 style="text-align: center">Prime Series Catalog Test</h1>
@@ -109,7 +19,8 @@
 					style="text-decoration: none"
 					target="_blank"
 				>
-				<button class="btn btn-details">Details</button>
+					<button class="btn btn-details">Details</button>
+				</a>
 				<button
 					class="btn btn-add-to-cart"
 					onclick="addToCart(1, 'Prime Series High Pulley', 4,189)"
@@ -126,7 +37,8 @@
 					style="text-decoration: none"
 					target="_blank"
 				>
-				<button class="btn btn-details">Details</button>
+					<button class="btn btn-details">Details</button>
+				</a>
 				<button
 					class="btn btn-add-to-cart"
 					onclick="addToCart(2, 'Prime Series Chest Press', 3,830)"
@@ -162,7 +74,8 @@
 					style="text-decoration: none"
 					target="_blank"
 				>
-				<button class="btn btn-details">Details</button>
+					<button class="btn btn-details">Details</button>
+				</a>
 				<button
 					class="btn btn-add-to-cart"
 					onclick="addToCart(4, 'Product 4', 4,189)"
@@ -182,7 +95,8 @@
 					style="text-decoration: none"
 					target="_blank"
 				>
-				<button class="btn btn-details">Details</button>
+					<button class="btn btn-details">Details</button>
+				</a>
 				<button
 					class="btn btn-add-to-cart"
 					onclick="addToCart(5, 'Product 5', 4,100)"
@@ -199,7 +113,8 @@
 					style="text-decoration: none"
 					target="_blank"
 				>
-				<button class="btn btn-details">Details</button>
+					<button class="btn btn-details">Details</button>
+				</a>
 				<button
 					class="btn btn-add-to-cart"
 					onclick="addToCart(6, 'Product 6', 4,189)"
@@ -216,7 +131,8 @@
 					style="text-decoration: none"
 					target="_blank"
 				>
-				<button class="btn btn-details">Details</button>
+					<button class="btn btn-details">Details</button>
+				</a>
 				<button
 					class="btn btn-add-to-cart"
 					onclick="addToCart(7, 'Prime Series Biceps Curl 7', 4,189)"
@@ -233,7 +149,8 @@
 					style="text-decoration: none"
 					target="_blank"
 				>
-				<button class="btn btn-details">Details</button>
+					<button class="btn btn-details">Details</button>
+				</a>
 				<button
 					class="btn btn-add-to-cart"
 					onclick="addToCart(8, 'Prime Series Shoulder Press 8', 4,069)"
@@ -253,7 +170,8 @@
 					style="text-decoration: none"
 					target="_blank"
 				>
-				<button class="btn btn-details">Details</button>
+					<button class="btn btn-details">Details</button>
+				</a>
 				<button
 					class="btn btn-add-to-cart"
 					onclick="addToCart(9, 'Prime Series Prone Leg Curl 9' , 4,189)"
@@ -270,7 +188,8 @@
 					style="text-decoration: none"
 					target="_blank"
 				>
-				<button class="btn btn-details">Details</button>
+					<button class="btn btn-details">Details</button>
+				</a>
 				<button
 					class="btn btn-add-to-cart"
 					onclick="addToCart(10, 'Prime Series Leg Curl Leg Extension 10', 4,308)"
@@ -287,7 +206,8 @@
 					style="text-decoration: none"
 					target="_blank"
 				>
-				<button class="btn btn-details">Details</button>
+					<button class="btn btn-details">Details</button>
+				</a>
 				<button
 					class="btn btn-add-to-cart"
 					onclick="addToCart(11, 'Prime Series Seated Row 11', 4,428)"
@@ -304,7 +224,8 @@
 					style="text-decoration: none"
 					target="_blank"
 				>
-				<button class="btn btn-details">Details</button>
+					<button class="btn btn-details">Details</button>
+				</a>
 				<button
 					class="btn btn-add-to-cart"
 					onclick="addToCart(12, 'Prime Series Leg Extension', 3,590)"
@@ -324,54 +245,6 @@
 			<p id="cart-total"></p>
 		</div>
 
-		<script>
-			let cart = [];
-
-			function addToCart(id, name, price) {
-				const product = { id, name, price };
-				cart.push(product);
-				displayCart();
-			}
-
-			function removeFromCart(index) {
-				cart.splice(index, 1);
-				displayCart();
-			}
-
-			function displayCart() {
-				const cartItems = document.getElementById('cart-items');
-				const cartTotal = document.getElementById('cart-total');
-				cartItems.innerHTML = '';
-				let total = 0;
-
-				cart.forEach((item, index) => {
-					const listItem = document.createElement('li');
-					listItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
-
-					const removeButton = document.createElement('button');
-					removeButton.textContent = 'Remove';
-					removeButton.className = 'btn-remove';
-					removeButton.onclick = () => removeFromCart(index);
-
-					listItem.appendChild(removeButton);
-					cartItems.appendChild(listItem);
-
-					total += item.price;
-				});
-
-				cartTotal.textContent = `Total: $${total.toFixed(2)}`;
-			}
-
-			function checkout() {
-				if (cart.length === 0) {
-					alert('Your cart is empty!');
-				} else {
-					let items = cart.map((item) => item.name).join(', ');
-					alert(`Thank you for purchasing: ${items}`);
-					cart = [];
-					displayCart();
-				}
-			}
-		</script>
+		<script src="./assets/js/prime-series.js"></script>
 	</body>
 </html>
